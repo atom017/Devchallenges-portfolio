@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Devchallenges</title>
+
+   
+  </head>
+  <body>
+   <main id="main">
+     <Section class="card horizontal" id="profile">
+      <div class="one-third-width square-img"><img src="img/kht.jpeg" alt=""></div>
+      <div class="vertical profile-detail">
+        <div class="horizontal address">
+          <h2>Antonio Haruki</h2>
+          <div class="vertical">
+            <div class="icon"><span class="material-icons">email</span>kh.thwel@gmail.com</div>
+            <div class="icon"><span class="material-icons">call</span>+959425416823</div>
+          </div>
+          
+        </div>
+        <p class="wider-width">Self-motivated developer who is willing to learn and create oustanding websites 
+          and UI applications.
+        </p>
+        <p class="wider-width">Praesent iaculis, nisl sit amet congue imperdiet, tellus velit elementum velit,
+           a faucibus turpis justo a mauris. Nunc sollicitudin rutrum mollis. 
+        </p>
+      </div>
+      
+      <!--
+        <div class="horizontal">
+        <div class="vertical"><h2>Antonio</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vivamus pellentesque, tortor non sagittis tempor, dui lorem sagittis nulla,
+        </p></div>
+
+        <div class="icon"><span class="material-icons">email</span>kh.thwel@gmail.com</div>
+        <div class="icon"><span class="material-icons">call</span>+959425416823</div>
+      </div>
+      -->
+      
+    </Section><!---->
+
+    <div class="horizontal" id="main-contents">
+      <div class="vertical">
+        <section class="vertical card wider-width" id="skills">
+          <div class="vertical">
+            <h4>Front end</h4>
+            <div class="horizontal">
+              <p class="half-width">React</p>
+              <div class="skill-container"><div id="react" class="radius"></div></div>
+            </div>
+
+            <div class="horizontal">
+              <p class="half-width">Javascript</p>
+              <div class="skill-container"><div id="javascript" class="radius"></div></div>
+            </div>
+
+            <div class="horizontal">
+              <p class="half-width">CSS</p>
+              <div class="skill-container"><div id="css" class="radius"></div></div>
+            </div>
+  
+            <div class="horizontal">
+              <p class="half-width">HTML</p>
+              <div class="skill-container"><div id="html" class="radius"></div></div>
+            </div>
+
+            <div class="horizontal">
+              <p class="half-width">React Native</p>
+              <div class="skill-container"><div id="react_native" class="radius"></div></div>
+            </div>
+          </div>
+        </section><!--End ofskills section-->
+
+        <Section class="vertical card wider-width" id="hobbies">
+          <h3>Hobbies</h3>
+          <div class="max-width rectangle-img"><img src="img/badminton.jpg" alt=""></div>
+          <h3>Badminton</h3>
+          <p>Cras vestibulum mi a urna semper, ut sollicitudin tellus sodales.</p>
+
+          <div class="max-width rectangle-img"><img src="img/cooking.jpg" alt=""></div>
+          <h3>Cooking</h3>
+          <p>Cras vestibulum mi a urna semper, ut sollicitudin tellus sodales.</p>
+
+          <div class="max-width rectangle-img"><img src="img/reading.jpeg" alt=""></div>
+          <h3>Reading</h3>
+          <p>Cras vestibulum mi a urna semper, ut sollicitudin tellus sodales.</p>
+          
+        </Section><!--End of Hobbies section-->
+    
+      </div>
+      
+      <div class="vertical">
+        <section class="vertical card max-width" id="blog">
+          <p>How to</p>
+          <div class="horizontal">
+            <h2>Random thoughts when you feel everything is wrong</h2>
+            <div class="wider-width square-img"><img src="img/blog.png" alt=""></div>
+          </div>
+  
+          <p>Nam euismod, mauris a sollicitudin feugiat, 
+            dolor nunc luctus lacus, quis scelerisque metus mi sit amet lacus. 
+            Sed interdum, libero quis tempor vulputate, felis neque ultricies ligula</p>
+          <p>luctus posuere leo urna sit amet felis. Praesent non diam ac turpis viverra
+           elementum ut et mi. Maecenas egestas justo lorem, ac posuere metus viverra pulvinar.</p>
+  
+        </section><!--End of blog section-->
+
+
+        <section class="vertical card max-width" id="experiences">
+          <h4>Experiences</h4>
+          <div class="horizontal">
+            
+          </div>
+  
+          <p>Nam euismod, mauris a sollicitudin feugiat, 
+            dolor nunc luctus lacus, quis scelerisque metus mi sit amet lacus. 
+            Sed interdum, libero quis tempor vulputate, felis neque ultricies ligula</p>
+          
+  
+        </section><!--End of blog section-->
+      </div>
+      
+    </div><!---->
+
+    <div class="card max-width">
+      <p>Projects</p>
+      <div class="horizontal filter">
+        <button class="button-fill btn" id="btn1" onclick="filter('all',this.id)">All</button>
+        <button class="btn" id="btn2" onclick="filter('responsive',this.id)">Responsive</button>
+        <button class="btn" id="btn3" onclick="filter('javascript',this.id)">Javascript</button>
+       
+      </div>
+    </div>
+
+    
+    <section class="horizontal max-width" id="projects">
+      <a id="prev" onclick="plusSlides(-1)">❮</a>
+      <div class="project card one-third-width type-responsive active">
+        <div class="square-img"><img src="img/photo1.png" alt=""></div>
+        <p>#HTML #CSS #Responsive</p>
+        <h3 class="proj-caption">Reciepe Page</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      <div class="project card one-third-width type-responsive type-js active">
+        <div class="square-img"><img src="img/interior-consultant.png" alt=""></div>
+        <p>#HTML #Javascript #Responsive</p>
+        <h3 class="proj-caption">Interior Consultant Page</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      <div class="project card one-third-width type-responsive active">
+        <div class="square-img"><img src="img/Edie.png" alt=""></div>
+        <p>#HTML #CSS #Responsive</p>
+        <h3 class="proj-caption">Edie Home Page</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      <div class="project card one-third-width">
+        <div class="square-img"><img src="img/checkoutPage.png" alt=""></div>
+        <p>#HTML #CSS #Responsive</p>
+        <h3 class="proj-caption">Checkout Page</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      <div class="project card one-third-width">
+        <div class="square-img"><img src="img/my-gallery.png" alt=""></div>
+        <p>#HTML #CSS #Responsive</p>
+        <h3 class="proj-caption">My gallery</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      <div class="project card one-third-width">
+        <div class="square-img"><img src="img/notfound.PNG" alt=""></div>
+        <p>#HTML #CSS #Responsive</p>
+        <h3 class="proj-caption">404 Page</h3>
+        <p>In this project, I have used pure HTML and CSS to create a responsive page.
+          The design is from devchallenges.io
+        </p>
+        <div class="horizontal"><button class="button-fill">Demo</button><button>Code</button></div>
+      </div>
+
+      
+  
+      <a id="next" onclick="plusSlides(1)">❯</a>
+      </section>
+       
+   </main>
+
+   <footer class="horizontal"><p>created by Antonio - Devchallenges.io @ 2021</p> </footer>
+  </body>
+</html>
